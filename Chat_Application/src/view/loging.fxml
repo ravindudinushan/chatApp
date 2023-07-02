@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogingFormController">
+   <children>
+      <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #894CC5;">
+         <children>
+            <Label layoutX="222.0" layoutY="6.0" prefHeight="50.0" prefWidth="175.0" text="Chat App" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="169.0" fitWidth="180.0" layoutX="216.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="enterName" layoutX="162.0" layoutY="317.0" onAction="#Txt_name_on_action" prefHeight="25.0" prefWidth="275.0" promptText="Enter Name" />
+      <Label layoutX="266.0" layoutY="293.0" text="UserName">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="388.0" prefHeight="13.0" prefWidth="600.0" style="-fx-background-color: #894CC5;" />
+      <Button layoutX="458.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#loginBtnOnAction" style="-fx-background-color: #04f92d;" text="Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

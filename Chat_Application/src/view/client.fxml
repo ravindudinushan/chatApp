@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="634.0" prefWidth="389.0" style="-fx-background-color: #859398;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
+   <children>
+      <AnchorPane layoutY="537.0" prefHeight="97.0" prefWidth="389.0" style="-fx-background-color: #894CC5;" />
+      <AnchorPane prefHeight="70.0" prefWidth="389.0" style="-fx-background-color: #894CC5;">
+         <children>
+            <Label fx:id="lblName" layoutX="90.0" layoutY="17.0" prefHeight="36.0" prefWidth="209.0" text="Ravindu Dinushan" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="325.0" layoutY="18.0" onMouseClicked="#btn_logout_On_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/On1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="53.0" layoutX="23.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icons8-viber.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="TxtMassageShowFeild" layoutX="24.0" layoutY="97.0" prefHeight="400.0" prefWidth="345.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="396.0" prefWidth="342.0" />
+         </content></ScrollPane>
+      <TextField fx:id="TxtMassageTypeFeild" layoutX="65.0" layoutY="549.0" onAction="#txt_massage_on_action" onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="36.0" prefWidth="231.0" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="Calibri Bold Italic" size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="35.0" fitWidth="27.0" layoutX="302.0" layoutY="554.0" onMouseClicked="#btn_cam_on_action" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/cam.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="335.0" layoutY="552.0" onMouseClicked="#btn_massage_send_on_action" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/send1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane fx:id="imogiPane" layoutX="9.0" layoutY="305.0" opacity="0.74" prefHeight="229.0" prefWidth="188.0" style="-fx-background-color: gray; -fx-background-radius: 15;">
+         <children>
+            <GridPane layoutX="10.0" layoutY="13.0" prefHeight="200.0" prefWidth="149.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#sad" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/baww.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#lot_sad" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../assest/sad_eye_close.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseDragged="#money" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../assest/money.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#love" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <image>
+                        <Image url="@../assest/love.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#green_sad" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../assest/blaaaak.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#smile_one_eyy" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../assest/smile_eye_close.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cry_yes" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../assest/sad_one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cry_head" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../assest/sad_head.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#real_amile" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../assest/smile_real.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#tuin" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../assest/tuinnn.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#woow" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../assest/woow.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#smile_normal" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../assest/smile_two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#large_smile" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@../assest/smile_one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#small_smile" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@../assest/smile_normal.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#tong_smile" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@../assest/tong_face.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="29.0" layoutY="548.0" onMouseClicked="#imojiOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/emoji-icon-png-20.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
