@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -23,6 +24,7 @@ public class LogingFormController {
         stage.close();
         stage.centerOnScreen();
         stage.setTitle("Chat App");
+        stage.getIcons().add(new Image("assest/icons8-viber.gif"));
         stage.show();
     }
 
@@ -34,6 +36,7 @@ public class LogingFormController {
         stage.close();
         stage.centerOnScreen();
         stage.setTitle("Chat App");
+        stage.getIcons().add(new Image("assest/icons8-viber.gif"));
         stage.show();
     }
 }
