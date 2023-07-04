@@ -22,6 +22,7 @@ public class LogingFormController {
         stage.setScene(new Scene(FXMLLoader.load(LogingFormController.class.getResource("../view/client.fxml"))));
         stage.close();
         stage.centerOnScreen();
+        stage.setTitle("Chat App");
         stage.show();
     }
 
@@ -32,6 +33,7 @@ public class LogingFormController {
         stage.setScene(new Scene(FXMLLoader.load(LogingFormController.class.getResource("../view/client.fxml"))));
         stage.close();
         stage.centerOnScreen();
+        stage.setTitle("Chat App");
         stage.show();
     }
 }
