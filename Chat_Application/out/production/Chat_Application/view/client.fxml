@@ -43,9 +43,9 @@
          <content>
             <VBox fx:id="vBox" prefHeight="396.0" prefWidth="342.0" />
          </content></ScrollPane>
-      <TextField fx:id="TxtMassageTypeFeild" layoutX="65.0" layoutY="549.0" onAction="#txt_massage_on_action" onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="36.0" prefWidth="231.0" style="-fx-background-radius: 20;">
+      <TextField fx:id="TxtMassageTypeFeild" layoutX="65.0" layoutY="549.0" onAction="#txt_massage_on_action" onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="36.0" prefWidth="231.0" promptText="Message" style="-fx-background-radius: 20;">
          <font>
-            <Font name="Calibri Bold Italic" size="17.0" />
+            <Font name="Calibri Bold" size="17.0" />
          </font>
       </TextField>
       <ImageView fitHeight="35.0" fitWidth="27.0" layoutX="302.0" layoutY="554.0" onMouseClicked="#btn_cam_on_action" pickOnBounds="true" preserveRatio="true">

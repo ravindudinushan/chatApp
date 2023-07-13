@@ -76,7 +76,6 @@ public class ClientController extends Thread{
                 String firstChars = "";
                 if (st.length() > 3) {
                     firstChars = st.substring(0, 3);
-
                 }
 
                 if (firstChars.equalsIgnoreCase("img")) {
@@ -199,7 +198,6 @@ public class ClientController extends Thread{
 
         if(msg.equalsIgnoreCase("BYE") || (msg.equalsIgnoreCase("logout"))) {
             System.exit(0);
-
         }
     }
 
@@ -225,7 +223,6 @@ public class ClientController extends Thread{
         String emoji = new String(Character.toChars(128525));
         TxtMassageTypeFeild.setText(emoji);
         imogiPane.setVisible(false);
-
     }
 
     public void green_sad(MouseEvent mouseEvent) {
